@@ -3,16 +3,11 @@ using UnityEngine;
 public class pj: MonoBehaviour
 {
 
-    int miNumero= 5;
-    float miNumeroflotante=0.8f;
-    string miCadenaDeTexto="holita, soy un texto";
-
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("inicio");
+        Debug.Log(this.transform)
     }
 
     // Update is called once per frame
