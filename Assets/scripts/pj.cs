@@ -3,9 +3,9 @@ using UnityEngine;
 public class pj: MonoBehaviour
 {
 
-int miNumero= 5;
-float miNumeroflotante=0.8f;
-string miCadenaDeTexto="holita, soy un texto";
+    int miNumero= 5;
+    float miNumeroflotante=0.8f;
+    string miCadenaDeTexto="holita, soy un texto";
 
 
 
@@ -23,7 +23,7 @@ string miCadenaDeTexto="holita, soy un texto";
 
 
 
-    int Sumar(int num1, int num2);
+    int Sumar(int num1, int num2)
     {
         
         int Suma=num1+num2;
