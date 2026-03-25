@@ -28,7 +28,7 @@ public class pj: MonoBehaviour
         
         int Suma=num1+num2;
 
-        return suma;
+        return Suma;
 
     }
 }
