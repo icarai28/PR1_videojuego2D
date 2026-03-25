@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class pj : MonoBehaviour
+public class pj: MonoBehaviour
 {
-    int 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
