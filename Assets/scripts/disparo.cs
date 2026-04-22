@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class disparo : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class disparo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool disparo=InputSystem.actions["Attack"].WasPressedThisFrame
-        if (disparo)
-        {Instantiate (senyal, new Vector3(0,0,0), Quaternion.identity)
-        }
+        bool disparo=InputSystem.actions["Attack"].WasPressedThisFrame();
+    
+  //  if (disparo)
+   //       {Instantiate (bala, new Vector3(0,0,0), Quaternion.identity);
+   //     }
     }
 }
+

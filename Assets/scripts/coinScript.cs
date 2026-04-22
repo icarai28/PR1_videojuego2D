@@ -15,9 +15,10 @@ public class coinScript : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col)
-    {if (col.gameObject.name== Personaje)
-    {GameObject.GetComponent<Animator>().SetBool("obtenerCoin",true);
-    Destroy(this.gameObject,3.0f)
+    {if (col.gameObject.name == "personaje")
+    {
+        gameObject.GetComponent<Animator>().SetBool("obtenerCoin",true);
+        Destroy(this.gameObject,3.0f);
     }
     
     }

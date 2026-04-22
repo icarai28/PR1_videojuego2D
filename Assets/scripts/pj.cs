@@ -1,5 +1,7 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class pj: MonoBehaviour
 
@@ -9,6 +11,7 @@ public float ImpulsoSalto=5.0f;
 
     Rigidbody2D rb;
     bool puedoSaltar=false;
+    bool estoyAzul=false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +22,9 @@ public float ImpulsoSalto=5.0f;
     // Update is called once per frame
     void Update()
     {
+
+
+
         Vector2 moveInput=InputSystem.actions["Move"].ReadValue<Vector2>();
 
 
@@ -64,5 +70,11 @@ rb.AddForce(transform.up*ImpulsoSalto,ForceMode2D.Impulse);
 
 
     }
+
+  //public  void CambiaColor(float ValorSlide);
+ // {this.GetComponent<SpriteRenderer>().color= Color.white;
+// estoyAzul=false} 
+ //else {this.GetComponent<SpriteRenderer>().color= Color.blue;
+ //estoyAzul=true}
 
 }
